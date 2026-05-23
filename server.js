@@ -26,7 +26,7 @@ const server = http.createServer((req, res) => {
     let safeUrl = req.url.split('?')[0];
     if (safeUrl === '/') safeUrl = '/index.html';
 
-    const filePath = path.join(__dirname, 'public', safeUrl);
+    const filePath = path.join(__dirname, safeUrl);
 
     fs.access(filePath, fs.constants.F_OK, (err) => {
         if (err) {
