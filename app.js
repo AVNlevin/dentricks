@@ -10,6 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initTestimonialCarousel();
     initFaqAccordion();
     initSymptomChecker();
+    initClinicCarousel();
 });
 
 // ==========================================
@@ -423,6 +424,58 @@ function initSymptomChecker() {
     bookResultBtn.addEventListener('click', () => {
         window.location.href = 'contact.html';
     });
+}
+
+// ==========================================
+// 8. Clinic Carousel (About Page)
+// ==========================================
+function initClinicCarousel() {
+    const track = document.getElementById('clinic-carousel-track');
+    const dots = document.querySelectorAll('#clinic-carousel-dots .carousel-dot');
+    if (!track || dots.length === 0) return;
+
+    let currentIndex = 0;
+    let autoSlideInterval;
+
+    function goToSlide(index) {
+        currentIndex = index;
+        track.style.transform = `translateX(-${index * 100}%)`;
+
+        dots.forEach((dot, idx) => {
+            dot.classList.remove('active');
+            if (idx === index) {
+                dot.classList.add('active');
+            }
+        });
+    }
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            goToSlide(index);
+            resetAutoSlide();
+        });
+    });
+
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(() => {
+            let nextIndex = (currentIndex + 1) % dots.length;
+            goToSlide(nextIndex);
+        }, 4000);
+    }
+
+    function resetAutoSlide() {
+        clearInterval(autoSlideInterval);
+        startAutoSlide();
+    }
+
+    startAutoSlide();
+
+    // Pause on hover
+    const container = track.closest('.clinic-carousel-container');
+    if (container) {
+        container.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+        container.addEventListener('mouseleave', startAutoSlide);
+    }
 }
 
 

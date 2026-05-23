@@ -91,6 +91,45 @@
             </div>
         </section>
 
+        <!-- About our clinic Section -->
+        <section class="about-clinic" style="background-color: var(--bg-secondary); padding: 80px 24px;">
+            <div class="section-container about-clinic-grid" style="max-width: 1280px; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;">
+                <!-- Left: Carousel -->
+                <div class="clinic-carousel-container" style="position: relative; overflow: hidden; border-radius: var(--border-radius-lg); box-shadow: var(--card-shadow); border: 1px solid var(--glass-border);">
+                    <div class="clinic-carousel-track" id="clinic-carousel-track" style="display: flex; transition: transform 0.5s ease; width: 100%;">
+                        <div class="clinic-carousel-slide" style="min-width: 100%;"><img src="assets/gallery_1.jpg" alt="Dentricks Reception Desk" style="width: 100%; display: block; aspect-ratio: 4/3; object-fit: cover;"></div>
+                        <div class="clinic-carousel-slide" style="min-width: 100%;"><img src="assets/gallery_2.jpg" alt="Laser Surgery Operatory" style="width: 100%; display: block; aspect-ratio: 4/3; object-fit: cover;"></div>
+                        <div class="clinic-carousel-slide" style="min-width: 100%;"><img src="assets/gallery_3.jpg" alt="Dr. Shah's Consultation Room" style="width: 100%; display: block; aspect-ratio: 4/3; object-fit: cover;"></div>
+                        <div class="clinic-carousel-slide" style="min-width: 100%;"><img src="assets/gallery_4.jpg" alt="Modern Patient Treatment Lounge" style="width: 100%; display: block; aspect-ratio: 4/3; object-fit: cover;"></div>
+                    </div>
+                    <!-- Indicators/Dots -->
+                    <div class="carousel-dots" id="clinic-carousel-dots" style="position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                        <span class="carousel-dot active" data-slide="0" style="width: 10px; height: 10px; border-radius: 50%; background-color: var(--primary); cursor: pointer; transition: background-color 0.3s;"></span>
+                        <span class="carousel-dot" data-slide="1" style="width: 10px; height: 10px; border-radius: 50%; background-color: rgba(255,255,255,0.5); cursor: pointer; transition: background-color 0.3s;"></span>
+                        <span class="carousel-dot" data-slide="2" style="width: 10px; height: 10px; border-radius: 50%; background-color: rgba(255,255,255,0.5); cursor: pointer; transition: background-color 0.3s;"></span>
+                        <span class="carousel-dot" data-slide="3" style="width: 10px; height: 10px; border-radius: 50%; background-color: rgba(255,255,255,0.5); cursor: pointer; transition: background-color 0.3s;"></span>
+                    </div>
+                </div>
+
+                <!-- Right: Text details -->
+                <div class="clinic-info">
+                    <span class="section-tag" style="background-color: var(--primary-light); color: var(--primary-hover); display: inline-block; margin-bottom: 12px;">Modern Practice</span>
+                    <h2 style="font-size: 2.4rem; color: var(--primary-deep); margin-bottom: 20px; font-weight: 800;">About our clinic</h2>
+                    <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px; font-size: 1.05rem;">
+                        Dentricks Dental Clinic is a State of the Art Dental clinic started by Dr. Rikin Shah. It is well equipped with all the latest technology in the field of dentistry, including advanced laser dental systems and modern digital implant guides.
+                    </p>
+                    <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 24px;">
+                        With branches at Vesu and Kadodara in Surat, we bring comfortable and precise dental care to your doorstep. Our clinics are designed with high-quality interior hygiene and sterilization protocols to ensure a safe, calm, and pain-free experience for our patients.
+                    </p>
+                    
+                    <div style="display: flex; gap: 16px;">
+                        <a href="services.html" class="btn btn-primary" style="background-color: var(--primary-deep); padding: 12px 24px;">Explore Services</a>
+                        <a href="contact.html" class="btn btn-secondary" style="padding: 12px 24px;">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Clinic Pillars Section -->
         <section class="clinic-pillars" style="background-color: var(--bg-primary); padding: 80px 24px;">
             <div class="section-container">
