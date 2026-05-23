@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Services & Treatments | Dentricks Dental Clinic Surat</title>
+    <!-- Meta Descriptions for SEO -->
+    <meta name="description" content="Explore advanced dental treatments offered at Dentricks Dental Clinic by Dr. Rikin Shah. Laser dentistry, dental implants, Invisalign, root canal, and extractions.">
+    <meta name="keywords" content="laser dentistry surat, dental implants surat, invisalign clear aligners surat, root canal treatment surat, tooth extraction surat, teeth whitening surat">
+    <meta name="author" content="Dentricks Dental Clinic">
+    
+    <!-- Google Fonts: Outfit & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-theme">
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo" id="header-logo" style="display: flex; align-items: center; gap: 12px;">
+                <img src="assets/logo.png" alt="Dentricks Dental Clinic Logo" class="logo-img-file" style="height: 50px; width: auto; object-fit: contain;">
+                <div class="logo-text-group" style="display: flex; flex-direction: column; justify-content: center; line-height: 1.1;">
+                    <span class="logo-text" style="font-size: 1.4rem; font-weight: 800; letter-spacing: -0.5px; color: var(--primary-deep);">dentricks</span>
+                    <span class="logo-subtext" style="font-size: 0.75rem; font-weight: 600; color: var(--primary); text-transform: uppercase; letter-spacing: 0.5px;">Dental Clinic</span>
+                </div>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link active">Services</a>
+                <a href="contact.html" class="nav-link">Book & Contact</a>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle-btn" aria-label="Toggle light/dark theme">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="contact.html" class="btn btn-primary nav-cta" style="background-color: var(--primary-deep);">Book Appointment</a>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open mobile menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main style="padding-top: 90px;">
+        <!-- Services Section -->
+        <section class="services" id="services" style="padding: 80px 24px;">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag" style="background-color: var(--primary-light); color: var(--primary-hover);">Clinical Offerings</span>
+                    <h1 class="section-title" style="color: var(--primary-deep);">Advanced Dental Treatments</h1>
+                    <p class="section-subtitle">We integrate leading-edge dental technology with meticulous clinical skills to offer customized dental services in Surat.</p>
+                </div>
+                
+                <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 45px;">
+                    <!-- Service 1: Laser Dentistry -->
+                    <div class="service-card glass-card hover-reveal-card" data-service-id="laser">
+                        <div class="service-icon" style="background-color: var(--primary-light); color: var(--primary-deep);"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <h3 class="service-title">Laser Dentistry</h3>
+                        <p class="service-short-desc">Painless dental solutions using advanced lasers for cavity treatment, gums therapies, and sterilizations.</p>
+                        <div class="service-details">
+                            <ul>
+                                <li>Painless Gum Contouring</li>
+                                <li>Laser Cavity Disinfection</li>
+                                <li>Rapid Healing Timings</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html?treatment=laser" class="service-link" style="color: var(--primary-deep);">Schedule Laser Visit <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Service 2: Dental Implants -->
+                    <div class="service-card glass-card hover-reveal-card" data-service-id="implants">
+                        <div class="service-icon" style="background-color: var(--primary-light); color: var(--primary-deep);"><i class="fa-solid fa-screwdriver"></i></div>
+                        <h3 class="service-title">Dental Implants</h3>
+                        <p class="service-short-desc">Replace missing teeth permanently with medical-grade biocompatible implants that look and feel natural.</p>
+                        <div class="service-details">
+                            <ul>
+                                <li>Single-Tooth Implants</li>
+                                <li>Fixed Bridge Restorations</li>
+                                <li>Complete Denture Anchors</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html?treatment=implants" class="service-link" style="color: var(--primary-deep);">Consult Implantology <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Service 3: Invisalign & Aligners -->
+                    <div class="service-card glass-card hover-reveal-card" data-service-id="orthodontics">
+                        <div class="service-icon" style="background-color: var(--primary-light); color: var(--primary-deep);"><i class="fa-solid fa-align-center"></i></div>
+                        <h3 class="service-title">Invisalign & Ortho</h3>
+                        <p class="service-short-desc">Comfortable, clear braces to align crooked teeth and fix bite alignments for teenagers and adults.</p>
+                        <div class="service-details">
+                            <ul>
+                                <li>Invisalign® Clear Aligners</li>
+                                <li>Traditional Ceramic Braces</li>
+                                <li>Retainers & Night Guards</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html?treatment=ortho" class="service-link" style="color: var(--primary-deep);">Book Ortho Exam <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <!-- Service 4: Root Canal Treatment -->
+                    <div class="service-card glass-card hover-reveal-card" data-service-id="rct">
+                        <div class="service-icon" style="background-color: var(--primary-light); color: var(--primary-deep);"><i class="fa-solid fa-tooth"></i></div>
+                        <h3 class="service-title">Root Canal (RCT)</h3>
+                        <p class="service-short-desc">Save damaged or infected teeth with precise, painless micro-endodontic root canal treatments.</p>
+                        <div class="service-details">
+                            <ul>
+                                <li>Single-Sitting Root Canals</li>
+                                <li>Protective Ceramic Crowns</li>
+                                <li>Pain Relief Therapy</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html?treatment=rct" class="service-link" style="color: var(--primary-deep);">Book RCT Visit <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 5: Cosmetic Dentistry -->
+                    <div class="service-card glass-card hover-reveal-card" data-service-id="cosmetic">
+                        <div class="service-icon" style="background-color: var(--primary-light); color: var(--primary-deep);"><i class="fa-solid fa-sparkles"></i></div>
+                        <h3 class="service-title">Cosmetic & Whitening</h3>
+                        <p class="service-short-desc">Transform your smile with porcelain veneers, custom composite bonding, and teeth bleaching.</p>
+                        <div class="service-details">
+                            <ul>
+                                <li>Custom Veneers & Laminates</li>
+                                <li>In-Office Laser Whitening</li>
+                                <li>Cosmetic Tooth Contouring</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html?treatment=cosmetic" class="service-link" style="color: var(--primary-deep);">Makeover Session <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+
+                    <!-- Service 6: General & Oral Surgery -->
+                    <div class="service-card glass-card hover-reveal-card" data-service-id="surgery">
+                        <div class="service-icon" style="background-color: var(--primary-light); color: var(--primary-deep);"><i class="fa-solid fa-hand-holding-droplet"></i></div>
+                        <h3 class="service-title">Oral Surgery & Extractions</h3>
+                        <p class="service-short-desc">Surgical removal of complex wisdom teeth, impacted extractions, and gum reconstructions.</p>
+                        <div class="service-details">
+                            <ul>
+                                <li>Impacted Wisdom Teeth Extraction</li>
+                                <li>Gum Flap Procedures</li>
+                                <li>Bone Grafts & Augmentation</li>
+                            </ul>
+                        </div>
+                        <a href="contact.html?treatment=surgery" class="service-link" style="color: var(--primary-deep);">Consult Surgeon <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dental Symptom Checker (Interactive Quiz) -->
+        <section class="symptom-checker" id="symptom-checker" style="background-color: var(--bg-primary); padding: 80px 24px;">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-tag" style="background-color: var(--primary-light); color: var(--primary-hover);">Interactive Diagnostic Tool</span>
+                    <h2 class="section-title" style="color: var(--primary-deep);">Dental Symptom Checker</h2>
+                    <p class="section-subtitle">Unsure what treatment you need? Answer three quick questions to receive a dynamic clinical recommendation.</p>
+                </div>
+                
+                <div class="quiz-container glass-card" style="box-shadow: var(--glass-shadow); max-width: 900px; margin: 0 auto; padding: 40px;">
+                    <!-- Progress Bar -->
+                    <div class="quiz-progress-bar">
+                        <div class="progress-fill" id="quiz-progress"></div>
+                        <div class="progress-steps">
+                            <div class="progress-step active" data-step="1">1</div>
+                            <div class="progress-step" data-step="2">2</div>
+                            <div class="progress-step" data-step="3">3</div>
+                        </div>
+                    </div>
+
+                    <!-- Step 1: Main Concern -->
+                    <div class="quiz-step active" id="quiz-step-1">
+                        <h3 class="quiz-question" style="color: var(--primary-deep); font-weight: 700;">What is your primary concern today?</h3>
+                        <div class="quiz-options-grid">
+                            <button class="quiz-option" data-value="pain">
+                                <span class="option-icon" style="background: var(--bg-secondary); color: var(--primary);"><i class="fa-solid fa-hand-holding-droplet"></i></span>
+                                <span class="option-title" style="color: var(--primary-deep);">Pain & Discomfort</span>
+                                <span class="option-desc">Toothache, hot/cold sensitivity, or sore bleeding gums</span>
+                            </button>
+                            <button class="quiz-option" data-value="aesthetics">
+                                <span class="option-icon" style="background: var(--bg-secondary); color: var(--primary);"><i class="fa-solid fa-wand-magic-sparkles"></i></span>
+                                <span class="option-title" style="color: var(--primary-deep);">Smile Aesthetics</span>
+                                <span class="option-desc">Teeth whitening, aligners, gaps, or custom veneers</span>
+                            </button>
+                            <button class="quiz-option" data-value="checkup">
+                                <span class="option-icon" style="background: var(--bg-secondary); color: var(--primary);"><i class="fa-solid fa-calendar-check"></i></span>
+                                <span class="option-title" style="color: var(--primary-deep);">Routine Checkup</span>
+                                <span class="option-desc">Standard cleaning, scaling, x-rays, or general review</span>
+                            </button>
+                            <button class="quiz-option" data-value="broken">
+                                <span class="option-icon" style="background: var(--bg-secondary); color: var(--primary);"><i class="fa-solid fa-tooth"></i></span>
+                                <span class="option-title" style="color: var(--primary-deep);">Broken/Missing Tooth</span>
+                                <span class="option-desc">Chipped crowns, cracked fillings, gaps, or loose implants</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Specific Details (Dynamic Content Loaded via JS) -->
+                    <div class="quiz-step" id="quiz-step-2">
+                        <h3 class="quiz-question" id="quiz-q2-title" style="color: var(--primary-deep); font-weight: 700;">Tell us a bit more details...</h3>
+                        <div class="quiz-options-grid" id="quiz-q2-options">
+                            <!-- Dynamic Content -->
+                        </div>
+                        <div class="quiz-actions">
+                            <button class="btn btn-secondary" id="quiz-prev-btn"><i class="fa-solid fa-arrow-left"></i> Back</button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Result & Recommendation -->
+                    <div class="quiz-step" id="quiz-step-3">
+                        <div class="result-container">
+                            <div class="result-header">
+                                <span class="result-badge" style="background-color: var(--primary-light); color: var(--primary-hover);"><i class="fa-solid fa-circle-info"></i> Suggested Care Path</span>
+                                <h3 class="result-title" id="quiz-result-title" style="color: var(--primary-deep); font-weight: 800; font-size: 2.2rem; margin-top: 10px;">Laser Dental Cleaning</h3>
+                            </div>
+                            
+                            <div class="result-body" style="background-color: var(--bg-secondary); border: 1px solid var(--glass-border); padding: 24px; border-radius: var(--border-radius-md); display: grid; grid-template-columns: 80px 1fr; gap: 24px; align-items: center;">
+                                <div class="result-illustration" style="background-color: var(--primary-light); color: var(--primary-deep); width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 2.5rem;">
+                                    <i class="fa-solid fa-notes-medical" id="result-icon"></i>
+                                </div>
+                                <div class="result-info">
+                                    <p class="result-description" id="quiz-result-desc" style="color: var(--text-secondary); line-height: 1.6;">Based on your choices, we suggest booking a routine checkup and teeth scaling.</p>
+                                    <div class="result-specs" style="display: flex; gap: 32px; margin-top: 12px;">
+                                        <div class="spec-item">
+                                            <span class="spec-label" style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Est. Duration</span>
+                                            <span class="spec-val" id="quiz-result-duration" style="font-weight: 700; color: var(--text-primary);">45 Mins</span>
+                                        </div>
+                                        <div class="spec-item">
+                                            <span class="spec-label" style="font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;">Specialist</span>
+                                            <span class="spec-val" id="quiz-result-specialist" style="font-weight: 700; color: var(--text-primary);">Dr. Rikin Shah</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="quiz-actions result-actions" style="display: flex; justify-content: space-between; align-items: center;">
+                                <button class="btn btn-secondary" id="quiz-reset-btn"><i class="fa-solid fa-rotate-left"></i> Start Over</button>
+                                <button class="btn btn-primary" id="quiz-book-result-btn" style="background-color: var(--primary-deep);">Book Recommended Treatment <i class="fa-solid fa-arrow-right"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" style="background-color: #0b1329; color: #cbd5e1; padding: 60px 24px; border-top: 1px solid rgba(255,255,255,0.05);">
+        <div class="section-container footer-grid" style="max-width: 1280px; margin: 0 auto;">
+            <!-- Brand Column -->
+            <div>
+                <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px;">
+                    <img src="assets/logo.png" alt="Dentricks Logo" style="height: 45px; width: auto; filter: brightness(1.2);">
+                    <div class="logo-text-group" style="display: flex; flex-direction: column; line-height: 1.1;">
+                        <span class="logo-text" style="font-size: 1.3rem; font-weight: 800; color: #ffffff;">dentricks</span>
+                        <span class="logo-subtext" style="font-size: 0.7rem; font-weight: 600; color: var(--primary);">Dental Clinic</span>
+                    </div>
+                </a>
+                <p style="font-size: 0.85rem; line-height: 1.6; margin-bottom: 20px;">Precise | Meticulous | Gentle<br>Surat's leading multispeciality dental clinic delivering modern, painless laser oral care for all age groups.</p>
+                <div class="social-links" style="display: flex; gap: 12px;">
+                    <a href="https://www.facebook.com/dentricksdental/" target="_blank" aria-label="Facebook Page" style="width: 36px; height: 36px; border-radius: 50%; background-color: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; color: #ffffff; transition: background-color 0.2s;"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/dentricks_dental_clinic" target="_blank" aria-label="Instagram Profile" style="width: 36px; height: 36px; border-radius: 50%; background-color: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; color: #ffffff; transition: background-color 0.2s;"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="tel:+919726008023" aria-label="Phone Number" style="width: 36px; height: 36px; border-radius: 50%; background-color: rgba(255,255,255,0.08); display: flex; align-items: center; justify-content: center; color: #ffffff; transition: background-color 0.2s;"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+
+            <!-- Pages Column -->
+            <div>
+                <h4 style="color: #ffffff; font-size: 1rem; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Navigation</h4>
+                <ul style="display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem;">
+                    <li><a href="index.html" style="color: #94a3b8; transition: color 0.2s;">Home</a></li>
+                    <li><a href="about.html" style="color: #94a3b8; transition: color 0.2s;">About Dr. Shah</a></li>
+                    <li><a href="services.html" style="color: #94a3b8; transition: color 0.2s;">Treatments</a></li>
+                    <li><a href="contact.html" style="color: #94a3b8; transition: color 0.2s;">Book Appointment</a></li>
+                </ul>
+            </div>
+
+            <!-- Services Column -->
+            <div>
+                <h4 style="color: #ffffff; font-size: 1rem; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Treatments</h4>
+                <ul style="display: flex; flex-direction: column; gap: 12px; font-size: 0.9rem; color: #94a3b8;">
+                    <li>Laser Dentistry</li>
+                    <li>Dental Implants</li>
+                    <li>Invisalign Aligners</li>
+                    <li>Root Canal Therapy</li>
+                    <li>Impacted Extraction</li>
+                </ul>
+            </div>
+
+            <!-- Locations Column -->
+            <div>
+                <h4 style="color: #ffffff; font-size: 1rem; margin-bottom: 20px; text-transform: uppercase; letter-spacing: 0.5px;">Our Branches</h4>
+                <div style="display: flex; flex-direction: column; gap: 16px; font-size: 0.85rem; line-height: 1.5;">
+                    <div>
+                        <strong style="color: #ffffff; display: block; margin-bottom: 4px;"><i class="fa-solid fa-location-dot" style="color: var(--primary);"></i> Vesu Clinic (Main)</strong>
+                        309-10, Times Square, Near Sangini Arise,<br>GD Goenka Canal Road, Vesu, Surat - 395007
+                        <span style="display: block; color: var(--primary); font-size: 0.75rem; margin-top: 2px;">Hours: 3:00 PM – 8:00 PM (Mon-Fri)</span>
+                    </div>
+                    <div>
+                        <strong style="color: #ffffff; display: block; margin-bottom: 4px;"><i class="fa-solid fa-location-dot" style="color: var(--primary);"></i> Kadodara Clinic</strong>
+                        201/A, Satkar Complex, Above SBI Bank,<br>Near Bus Stand, Kadodara, Surat - 394327
+                        <span style="display: block; color: var(--primary); font-size: 0.75rem; margin-top: 2px;">Hours: 9:00 AM – 2:00 PM (Mon-Fri)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-container footer-bottom-container" style="max-width: 1280px; margin: 40px auto 0 auto; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.05); font-size: 0.8rem; color: #64748b;">
+            <p>&copy; 2026 Dentricks Dental Clinic. All Rights Reserved.</p>
+            <p style="display: flex; gap: 16px;">
+                <span>Dr. Rikin Shah (BDS)</span>
+                <span>•</span>
+                <a href="#" id="staff-portal-link" style="color: #64748b; text-decoration: underline;">Staff Portal</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Widget -->
+    <a href="https://wa.me/919726008023" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- JS Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
