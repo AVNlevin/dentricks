@@ -207,38 +207,43 @@
                     <p class="section-subtitle">Take a look inside our state-of-the-art dental centers in Surat, designed for your comfort and hygiene.</p>
                 </div>
                 
-                <div class="clinic-gallery-grid">
-                    <!-- Photo 1 -->
-                    <div class="gallery-item glass-card">
-                        <img src="assets/gallery_1.jpg" alt="Dentricks Reception Desk">
-                        <div class="gallery-caption">
-                            <h4>Branded Reception Desk</h4>
-                            <p>Warm welcome & helper desk</p>
+                <div class="clinic-carousel-container" style="position: relative; overflow: hidden; border-radius: var(--border-radius-lg); box-shadow: var(--card-shadow); border: 1px solid var(--glass-border); margin: 40px auto 0 auto; max-width: 800px;">
+                    <div class="clinic-carousel-track" id="home-clinic-carousel-track" style="display: flex; transition: transform 0.5s ease; width: 100%;">
+                        <div class="clinic-carousel-slide" style="min-width: 100%; position: relative;">
+                            <img src="assets/gallery_1.jpg" alt="Dentricks Reception Desk" style="width: 100%; display: block; aspect-ratio: 4/3; object-fit: cover;">
+                            <div class="gallery-caption" style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 20px; text-align: left;">
+                                <h4 style="color: white; font-weight: 700; margin-bottom: 4px;">Branded Reception Desk</h4>
+                                <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin: 0;">Warm welcome & helper desk</p>
+                            </div>
+                        </div>
+                        <div class="clinic-carousel-slide" style="min-width: 100%; position: relative;">
+                            <img src="assets/gallery_2.jpg" alt="Laser Surgery Operatory" style="width: 100%; display: block; aspect-ratio: 4/3; object-fit: cover;">
+                            <div class="gallery-caption" style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 20px; text-align: left;">
+                                <h4 style="color: white; font-weight: 700; margin-bottom: 4px;">Laser Surgery Operatory</h4>
+                                <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin: 0;">Advanced treatment room setup</p>
+                            </div>
+                        </div>
+                        <div class="clinic-carousel-slide" style="min-width: 100%; position: relative;">
+                            <img src="assets/gallery_3.jpg" alt="Dr. Shah's Consultation Room" style="width: 100%; display: block; aspect-ratio: 4/3; object-fit: cover;">
+                            <div class="gallery-caption" style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 20px; text-align: left;">
+                                <h4 style="color: white; font-weight: 700; margin-bottom: 4px;">Dr. Shah's Consultation Room</h4>
+                                <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin: 0;">Private discussion & diagnostics space</p>
+                            </div>
+                        </div>
+                        <div class="clinic-carousel-slide" style="min-width: 100%; position: relative;">
+                            <img src="assets/gallery_4.jpg" alt="Modern Patient Treatment Lounge" style="width: 100%; display: block; aspect-ratio: 4/3; object-fit: cover;">
+                            <div class="gallery-caption" style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(0,0,0,0.8)); color: white; padding: 20px; text-align: left;">
+                                <h4 style="color: white; font-weight: 700; margin-bottom: 4px;">Modern Patient Treatment Lounge</h4>
+                                <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem; margin: 0;">Ergonomic design for patient comfort</p>
+                            </div>
                         </div>
                     </div>
-                    <!-- Photo 2 -->
-                    <div class="gallery-item glass-card">
-                        <img src="assets/gallery_2.jpg" alt="Dentricks Treatment Room 1">
-                        <div class="gallery-caption">
-                            <h4>Laser Surgery Operatory</h4>
-                            <p>Advanced treatment room setup</p>
-                        </div>
-                    </div>
-                    <!-- Photo 3 -->
-                    <div class="gallery-item glass-card">
-                        <img src="assets/gallery_3.jpg" alt="Dentricks Consultation Office">
-                        <div class="gallery-caption">
-                            <h4>Dr. Shah's Consultation Room</h4>
-                            <p>Private discussion & diagnostics space</p>
-                        </div>
-                    </div>
-                    <!-- Photo 4 -->
-                    <div class="gallery-item glass-card">
-                        <img src="assets/gallery_4.jpg" alt="Dentricks Treatment Room 2">
-                        <div class="gallery-caption">
-                            <h4>Modern Patient Treatment Lounge</h4>
-                            <p>Ergonomic design for patient comfort</p>
-                        </div>
+                    <!-- Indicators/Dots -->
+                    <div class="carousel-dots" id="home-clinic-carousel-dots" style="position: absolute; bottom: 16px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10;">
+                        <span class="carousel-dot active" data-slide="0" style="width: 10px; height: 10px; border-radius: 50%; background-color: var(--primary); cursor: pointer; transition: background-color 0.3s;"></span>
+                        <span class="carousel-dot" data-slide="1" style="width: 10px; height: 10px; border-radius: 50%; background-color: rgba(255,255,255,0.5); cursor: pointer; transition: background-color 0.3s;"></span>
+                        <span class="carousel-dot" data-slide="2" style="width: 10px; height: 10px; border-radius: 50%; background-color: rgba(255,255,255,0.5); cursor: pointer; transition: background-color 0.3s;"></span>
+                        <span class="carousel-dot" data-slide="3" style="width: 10px; height: 10px; border-radius: 50%; background-color: rgba(255,255,255,0.5); cursor: pointer; transition: background-color 0.3s;"></span>
                     </div>
                 </div>
             </div>
